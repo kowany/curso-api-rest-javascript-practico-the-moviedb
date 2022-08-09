@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900');
+
+:root {
+ --live-indicator-shadow: hsla(0, 79%, 63%, .5);
+ --rich-black-fogra-30: hsla(219, 32%, 10%);
+ --rich-black-fogra-29: hsla(222, 25%, 10%);
+ --live-indicator: hsl(0, 79%, 63%);
+ --oxford-blue-50: hsla(218, 39%, 14%, .8);
+ --oxford-blue: hsl(218, 39%, 14%);
+ --light-azure: hsl(214, 84%, 56%);
+ --off-white: hsl(0, 0%, 88%);
+ --yellow: hsl(45, 100%, 44%);
+ --white: hsl(0, 0%, 100%);
+ --azure: hsl(211, 100%, 50%);
+
+ /* Typography */
+
+ --ff-inter: "Inter", sans-serif;
+
+ --section-heading: 40px;
+ --fs-lg: 22px;
+ --fs-md: 17px;
+ --fs-sm: 14px;
+ --fs-x-sm: 12px;
+
+ --fw-7: 700;
+ --fw-6: 600;
+ --fw-5: 500;
+
+ /* Spacing */
+ --px: 120px;  /* padding-left padding-right*/ 
+}
+
+* {
+ margin: 0;
+ padding: 0;
+ transition: all .5s ease;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+/* Default font-family */
+
+html {
+ font-family: var(--ff-inter);
+}
+
+/* All heading color */
+
+h1, h2, h3, h4, h5, h6 { color: var(--white)}
+
+/* All default background & color
+Improve text rendering */
+
+body {
+ background: var(--rich-black-fogra-29);
+ color: var(--off-white);
+ -webkit-font-smoothing: antialiased;
+}
+
+/* change image default */
+
+
+add button default {
+ color: var(--off-white);
+}
+img {
+ display: block;
+ width: 100%;
+ height: 100%;
+ pointer-events: none;
+ object-fit: cover;
+}
+
+/* remove form default */
+
+input, button, select {
+ font: inherit;
+ background: none;
+ border: none;
+ outline: none;
+}
+
+/* add button default  */
+button{
+ color: var(--off-white);
+ cursor: pointer;
+}
+
+/* remove list item marker */
+li { list-style: none; }
+
+/* change link default */
+a {
+ text-decoration: none;
+ display: block;
+ color: var(--off-white);
+}
+
+/* change default scrollbar style */
+
+::-webkit--scrollbar {
+ background: transparent;
+ border-left: 1px solid var(--oxford-blue)
+}
+
+::-webkit--scrollbar-thumb {
+ background: var(--light-azure);
+ border: 3px solid var(--rich-black-fogra-29)
+}
